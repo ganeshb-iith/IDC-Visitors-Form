@@ -169,11 +169,8 @@
                 });
   
                 if (response.ok) {
-                    const data = await response.json();
                     alert('Visitor information has been saved!');
-                    console.log('Response OK:', response.ok);
-                    console.log('Response Data:', data);
-                    window.open('instructions.html', '_blank', 'noopener noreferrer');
+    window.location.href = 'instructions.html';  // open in the same tab
                 } else {
                     alert('Failed to save visitor information. Please try again.');
                     console.error('Error response:', response.statusText);
@@ -188,4 +185,5 @@
 
 </body>
 </html>
+
 
