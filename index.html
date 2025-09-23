@@ -44,7 +44,7 @@
     </style>
 </head>
 <body>
-    <h1>IITH Data Center Visitors Details1</h1>
+    <h1>IITH Data Center Visitors Details2</h1>
     <form id="visitorForm">
         <label for="visitorName">Enter your name:</label>
         <input type="text" id="visitorName" name="visitorName" class="A" required placeholder="Enter your full name here"><br>
@@ -128,7 +128,7 @@
             }
 
             try {
-                const response = await fetch('https://script.google.com/macros/s/AKfycbyQsiCK0tAxeEeSY1-YwEjf6K5-QcQblUnAZZxH_dLj51CxLUGncXYgCnVWrvozTngY/exec', {
+                const response = await fetch('https://script.google.com/macros/s/AKfycbw5JI0eWPCi7QVGbavnrxtC7F49eRj22KQFmfolNc1AiRa_tfpmZz92PybmYYIkNMuB/exec', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(visitorData)
@@ -152,3 +152,4 @@
     </script>
 </body>
 </html>
+
